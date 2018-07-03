@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_parent_style"
+    android:orientation="vertical"
+    tools:context="subbukathir.examresult.ExamResult">
+
+    <include layout="@layout/toolbar"/>
+
+    <include
+        layout="@layout/view_progress"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsvExamReport"
+        style="@style/match_parent_style">
+        <LinearLayout
+            style="@style/match_parent_style"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvExamName"
+                style="@style/text_view_common"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/tvTotalMark"
+                style="@style/text_view_common"
+                android:text="@string/exam_result.total_mark"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/space_margin_padding_medium"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_margin_padding_medium"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:id="@+id/tvCorrect"
+                    style="@style/text_view_common"
+                    android:text="@string/exam_result.correct"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_gravity="center_horizontal"
+                    tools:ignore="RtlCompat" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:id="@+id/tvWrong"
+                    style="@style/text_view_common"
+                    android:text="@string/exam_result.wrong"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_gravity="center_horizontal"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:id="@+id/tvSkipped"
+                    style="@style/text_view_common"
+                    android:text="@string/exam_result.skipped"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnPractiveTest"
+                style="@style/match_wrap_style"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="@dimen/space_margin_padding_medium"
+                android:text="@string/exam_result.practice_test"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.CardView
+                style="@style/match_wrap_style"
+                android:padding="@dimen/space_margin_padding_medium"
+                android:layout_margin="@dimen/space_margin_padding_medium"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
+                <LinearLayout
+                    style="@style/match_wrap_style"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/text_view_common"
+                            android:text="@string/exam_result.exam_date"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="@android:color/darker_gray"/>
+                        <TextView
+                            android:id="@+id/tvExamDate"
+                            style="@style/text_view_common"
+                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/text_view_common"
+                            android:text="@string/exam_result.exam_duration"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="@android:color/darker_gray"/>
+                        <TextView
+                            android:id="@+id/tvExamDuration"
+                            style="@style/text_view_common"
+                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/text_view_common"
+                            android:text="@string/exam_result.start_time"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="@android:color/darker_gray"/>
+                        <TextView
+                            android:id="@+id/tvStartTime"
+                            style="@style/text_view_common"
+                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/text_view_common"
+                            android:text="@string/exam_result.end_time"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="@android:color/darker_gray"/>
+                        <TextView
+                            android:id="@+id/tvEndTime"
+                            style="@style/text_view_common"
+                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/text_view_common"
+                            android:text="@string/exam_result.mark"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="@android:color/darker_gray"/>
+                        <TextView
+                            android:id="@+id/tvMark"
+                            style="@style/text_view_common"
+                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

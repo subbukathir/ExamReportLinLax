@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Exam Result</string>
+    <string name="lbl_exam_report">Exam Report</string>
+    <string name="exam_result.total_mark">%s \n Total Mark</string>
+    <string name="exam_result.correct">%s \n Correct</string>
+    <string name="exam_result.wrong">%s \n Wrong</string>
+    <string name="exam_result.skipped">%s \n Skipped</string>
+
+    <string name="exam_result.exam_date">Exam Date :</string>
+    <string name="exam_result.exam_duration">Exam Duration:</string>
+    <string name="exam_result.start_time">Start Time : </string>
+    <string name="exam_result.end_time">End Time :</string>
+    <string name="exam_result.mark">Mark :</string>
+    <string name="exam_result.practice_test">Practice Test %s</string>
+
+</resources>
